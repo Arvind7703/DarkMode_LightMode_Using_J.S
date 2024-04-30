@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html,body {
     height: 100%;
     width: 100%;
     display: flex;
@@ -13,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 section {
     background-color: rgb(211, 247, 247);
@@ -22,6 +22,9 @@ section {
     overflow: scroll;
 
 }
+
+/* -----------------------------------------heading styling-------------------------------------------- */
+
 
 img {
     height: 250px;
@@ -44,10 +47,10 @@ img {
 .date {
     display: flex;
     align-items: flex-end;
-
     margin-right: 20px;
     margin-left: 20px;
 }
+
 
 .info {
     font-size: small;
@@ -65,6 +68,8 @@ img {
     margin-left: 20px;
 }
 
+/* -----------------------------------------Ending styling-------------------------------------------- */
+
 footer {
     margin-left: 30px;
     margin-right: 30px;
@@ -76,18 +81,20 @@ span {
 
 }
 
+.biographies {
+
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+/* -----------------------------------------Links styling-------------------------------------------- */
+
 .yt-link {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 
-}
-
-.biographies {
-
-    margin-right: 40px;
-    margin-left: 40px;
 }
 
 .more-link {
@@ -98,6 +105,8 @@ span {
     margin-top: 20px;
 }
 
+/* -----------------------------------------Button styling-------------------------------------------- */
+
 #btn {
     height: 35px;
     width: 80px;
@@ -105,5 +114,12 @@ span {
     font-weight: 500;
     border: 3px solid #000;
     margin: 5px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#btn:hover{
+    transform: scale(1.1);
+
 
 }

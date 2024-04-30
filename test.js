@@ -1,12 +1,18 @@
-var m = document.getElementById("btn")
-var body = document.querySelector("body")
-var section = document.querySelector("section")
-a = 0
+
+// -------------------------------------Variables------------------------------->
+
+
+let m = document.getElementById("btn")
+let body = document.querySelector("body")
+let section = document.querySelector("section")
+let mode = 0
+
+// -------------------------------------Events------------------------------->
 
 m.addEventListener("click", function () {
 
-
-    if (a == 0) {
+// -------------------------------------conditions------------------------------->
+    if (mode == 0) {
 
         body.style.backgroundColor = "#000";
         body.style.color = "#fff";
@@ -16,7 +22,7 @@ m.addEventListener("click", function () {
         section.style.backgroundColor = "rgb(14, 14, 41)";
         section.style.border = "10px solid rgb(211, 247, 247)";
         m.innerHTML = "Light mode";
-        a = 1
+        mode = 1
 
     }
     else {
@@ -29,7 +35,9 @@ m.addEventListener("click", function () {
         section.style.border = "10px solid rgb(14, 14, 41)";
         m.innerHTML = "Dark mode";
         m.style.fontWeight = "500";
-        a = 0
+        mode = 0
 
     };
 });
+
+ 
